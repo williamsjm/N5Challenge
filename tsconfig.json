@@ -1,0 +1,10 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/williamsjm-root-config.ts"],
+  "compilerOptions": {
+    "jsx": "react",
+    "declarationDir": "dist"
+  },
+  "include": ["src/**/*", "nav-bar-app/src/components"],
+  "exclude": ["src/**/*.test*"]
+}
