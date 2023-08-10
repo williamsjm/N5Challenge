@@ -1,6 +1,18 @@
 <single-spa-router>
-  <application name="@williamsjm/nav-bar"></application>
-  <application name="@williamsjm/home-page"></application>
-  <application name="@williamsjm/rick-and-morty"></application>
-  <application name="@williamsjm/harry-potter"></application>
+  <application name="@williamsjm/nav-bar"></application> <!-- Siempre visible -->
+
+  <!-- Ruta para el home -->
+  <route path="/home">
+    <application name="@williamsjm/home-page"></application>
+  </route>
+
+  <!-- Ruta para Harry Potter -->
+  <route path="/harry-potter">
+    <application name="@williamsjm/harry-potter"></application>
+  </route>
+
+  <!-- Ruta para Rick and Morty -->
+  <route path="/rick-and-morty">
+    <application name="@williamsjm/rick-and-morty"></application>
+  </route>
 </single-spa-router>
